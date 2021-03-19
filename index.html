@@ -158,6 +158,7 @@
 <li>Pandoc’s own <a href="https://github.com/pandoc/pandoc-action-example">pandoc-action-example</a>.</li>
 <li><a href="https://github.com/marketplace/actions/deploy-to-github-pages">deploy-to-github-pages</a> action.</li>
 </ul>
+<p>The output can be viewed here: <a href="https://jhidding.github.io/readme-pages">github.io/readme-pages</a> Github repo: <a href="https://github.com/jhidding/readme-pages">github.com/jhidding/readme-pages</a></p>
 <h2 id="pandoc">Pandoc</h2>
 <p>Pandoc is the Universal document converter. We can use it to convert our README file into HTML.</p>
 <pre><code>    docker run pandoc/core pandoc --version</code></pre>
@@ -170,7 +171,7 @@
     on:
         push:
             branches:
-              - master
+              - main
     jobs:
         deploy:
             runs-on: ubuntu-latest
